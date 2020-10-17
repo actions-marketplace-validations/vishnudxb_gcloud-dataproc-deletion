@@ -1,5 +1,5 @@
-name: 'Gcloud Dataproc cluster creation!!'
-description: 'Gcloud Dataproc cluster creation!!'
+name: 'Gcloud Dataproc cluster deletion!!'
+description: 'Gcloud Dataproc cluster deletion!!'
 author: 'Vishnu Nair'
 branding:
   icon: 'cloud'
