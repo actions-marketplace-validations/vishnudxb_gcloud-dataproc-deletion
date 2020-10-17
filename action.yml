@@ -1,0 +1,23 @@
+name: 'Gcloud Dataproc cluster creation!!'
+description: 'Gcloud Dataproc cluster creation!!'
+author: 'Vishnu Nair'
+branding:
+  icon: 'cloud'
+  color: 'blue'
+inputs:
+  cluster:
+    description: 'Enter your gcloud dataproc cluster name'
+    required: true
+  region:
+    description: 'Enter your gcloud dataproc cluster region'
+    required: true
+  project:
+    description: 'Enter your gcloud project id'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.cluster }}
+    - ${{ inputs.region }}
+    - ${{ inputs.project }}
